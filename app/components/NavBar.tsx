@@ -7,7 +7,7 @@ const NavBar = () => {
         justify-around py-5 px-24 border-gray-700 bg-black shadow-md z-10'>
 
             <Link href="/" 
-            className="font-poppins font-bold text-brand-pink text-2xl no-underline tracking-wide transition duration-300 hover:scale-105">            
+            className="nav-logo font-poppins font-bold text-2xl text-brand-pink tracking-tight no-underline">            
             SISTECH CAFE
             </Link>
 
