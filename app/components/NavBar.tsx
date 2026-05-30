@@ -3,39 +3,40 @@ import Link from "next/link";
 
 const NavBar = () => {
     return (
-        <nav className='fixed top-0 w-full flex items-center 
+        <nav className='fixed top-0 w-full flex items-center bg-brand-white 
         justify-around py-5 px-24 border-gray-700 bg-black shadow-md z-10'>
 
             <Link href="/" 
-            className="font-poppins font-bold text-brand-pink text-2xl transition duration-300 hover:scale-105">            
+            className="font-poppins font-bold text-brand-pink text-2xl no-underline tracking-wide transition duration-300 hover:scale-105">            
             SISTECH CAFE
             </Link>
 
-            <ul className ="flex gap-10 text-lg">
+            <ul className ="flex gap-10 text-lg list-none m-0 p-0">
                 <Link
                 href="Menu"
-                className="font-semibold text-brand-black hover:text-brand-pink transition-colors"
+                className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     Menu
                 </Link>    
                 
                  <Link
                 href="About Us"
-                className="font-semibold text-brand-black hover:text-brand-pink transition-colors"
+                className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     About Us
                 </Link>  
 
                  <Link
                 href="Promo"
-                className="font-semibold text-brand-black hover:text-brand-pink transition-colors"
+                className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     Promo
                 </Link>  
 
                  <Link
                 href="Login"
-                className="font-semibold text-brand-black hover:text-brand-pink transition-colors"
+                className="font-semibold px-6 py-3 bg-brand-pink text-brand-white rounded-full shadow-sm 
+                transition-all duration-300 transform hover:bg-brand-white hover:text-brand-pink hover:scale-105 cursor-pointer border-none"
                 >
                     Login
                 </Link>  
