@@ -5,7 +5,6 @@ const page = () => {
         <div className="min-h-screen flex items-center justify-center"> 
     <div className="space-y-3 max-w-3x1">
       <h1 className="text-5x1 font-semibold">MENU</h1>
-      <p className="text-gray-500"> Local Coffee brewed by Extraordinary Women in Indonesia</p>
        </div>
     </div>
     );

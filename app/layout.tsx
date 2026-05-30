@@ -1,16 +1,15 @@
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'glightbox/dist/css/glightbox.min.css';
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"], // Choose the weights you need
+  subsets: ["latin"],                  // The required subset
+  variable: "--font-poppins",          // Optional: for Tailwind custom variables
 });
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={poppins.className}
     >
       <NavBar></NavBar>
       <body className="min-h-full flex flex-col">
