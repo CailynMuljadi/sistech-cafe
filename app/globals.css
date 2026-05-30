@@ -18,14 +18,14 @@ body, html {
   padding: 0;
   width: 100%;
   min-height: 100vh;
-  background: var(--background) !important;
-  color: var(--foreground)!important;
-  font-family: var(--font-poppins)!important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  font-family:"Poppins", sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #FF74B1 !important;
-  font-family: var(--font-poppins) !important;
+  font-family: "Poppins", sans-serif !important;
   font-weight:700 !important;
 }
 
@@ -61,7 +61,7 @@ nav {
 
 .nav a:hover {
   animation: vibrate 0.3s linear infinite;
-  color:var(--brand-pink-dark) !important;
+  color:#E05594 !important;
 }
 
 nav ul a {
@@ -77,8 +77,8 @@ nav ul a:hover {
 
 /* force button to be pink with white text */
 button, .menu-btn {
-  background-color: var(--brand-pink) !important;
-  color: var(--brand-white) !important;
+  background-color: #FF74B1 !important;
+  color: #ffffff !important;
   border: none !important;
   cursor: pointer !important;
 
@@ -89,16 +89,19 @@ button, .menu-btn {
 }
 
 button:hover {
-  background-color: var(--brand-white) !important;
-  color: var(--brand-pink) !important;
+  background-color: #ffffff !important;
+  color: #FF74B1 !important;
+  border: 2px solid #FF74B1 !important;
   transform: scale(1.05) !important;
 }
 
 footer {
-  background-color: var(--brand-pink) !important;
-  color: var(--brand-white) !important;
+  background-color: #FF74B1 !important;
+  color: #ffffff !important;
   width: 100% !important;
   height: 192px !important;
+  padding-top: 23px !important;
+  padding-bottom: 23px !important;
 }
 
 img {
