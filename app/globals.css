@@ -59,7 +59,7 @@ nav {
   100% { transform: translateX(0); }
 }
 
-.nav a:hover {
+.nav-logo:hover {
   animation: vibrate 0.3s linear infinite;
   color:#E05594 !important;
 }

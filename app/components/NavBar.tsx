@@ -4,12 +4,18 @@ import Link from "next/link";
 const NavBar = () => {
     return (
         <nav 
-        style={{ backgroundColor: '#ffffff' }}
-        className='fixed top-0 w-full flex items-center bg-brand-white 
-        justify-around py-5 px-24 border-gray-700 bg-black shadow-md z-10'>
+        style={{ 
+            backgroundColor: '#ffffff', 
+            borderBottom: '1px solid #cacaca',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            padding: '1rem 2rem',
+        }}
+        className='w-full'>
 
             <Link href="/" 
-            className="nav-logo font-poppins font-bold text-2xl text-brand-pink tracking-tight no-underline">            
+            className="nav-logo font-poppins font-bold text-2xl text-brand-pink no-underline">            
             SISTECH CAFE
             </Link>
 
