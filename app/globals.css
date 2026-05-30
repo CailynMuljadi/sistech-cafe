@@ -10,10 +10,42 @@
   --font-poppins: "Poppins", sans-serif;
 }
 
-body {
+body, html, main {
   background: var(--background) !important;
   color: var(--foreground)!important;
-  font-family: var(--font-poppins);
+  font-family: var(--font-poppins)!important;
+}
+
+/* Force links to never be blue or underlined */
+a {
+  color: #000000 !important;
+  text-decoration: none !important;
+}
+
+/*Navbar specific overrides*/
+nav { 
+  background-color: #FFFFFF !important;
+}
+
+nav a {
+  color: #000000 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+}
+
+nav a:hover {
+  color: #FF74B1 !important;
+}
+
+/* force button to be pink with white text */
+button, .menu-btn {
+  background-color: var(--brand-pink) !important;
+  color: var(--brand-white) !important;
+  border: none !important;
+}
+button:hover, .menu-btn:hover {
+  background-color: var(--brand-white) !important;
+  color: var(--brand-pink) !important;
 }
 
 img {
