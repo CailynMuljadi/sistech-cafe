@@ -13,21 +13,21 @@ const NavBar = () => {
 
             <ul className ="flex gap-10 text-lg">
                 <Link
-                href="menu"
+                href="Menu"
                 className="text-gray-300 hover:text-white transition-colors"
                 >
                     Menu
                 </Link>    
                 
                  <Link
-                href="aboutus"
+                href="About Us"
                 className="text-gray-300 hover:text-white transition-colors"
                 >
                     About Us
                 </Link>  
 
                  <Link
-                href="promo"
+                href="Promo"
                 className="text-gray-300 hover:text-white transition-colors"
                 >
                     Promo
