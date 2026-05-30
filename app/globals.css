@@ -4,9 +4,11 @@
 :root {
   --background: #ffffff;
   --foreground: #000000;
+
   --brand-pink: #FF74B1;
   --brand-black:#000000;
   --brand-white:#ffffff;
+
   --font-poppins: "Poppins", sans-serif;
 }
 
@@ -15,6 +17,13 @@ body, html, main {
   color: var(--foreground)!important;
   font-family: var(--font-poppins)!important;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FF74B1 !important;
+  font-family: var(--font-poppins) !important;
+  font-weight:700 !important;
+}
+
 
 /* Force links to never be blue or underlined */
 a {
@@ -25,6 +34,7 @@ a {
 /*Navbar specific overrides*/
 nav { 
   background-color: #FFFFFF !important;
+  border-bottom: 1px solid #E5E5E5 !important;
 }
 
 nav a {
@@ -42,6 +52,11 @@ button, .menu-btn {
   background-color: var(--brand-pink) !important;
   color: var(--brand-white) !important;
   border: none !important;
+  cursor: pointer !important;
+
+  padding: 12px 32px !important;
+  border-radius: 9999px !important;
+  font-weight: 600 !important;
 }
 button:hover, .menu-btn:hover {
   background-color: var(--brand-white) !important;
