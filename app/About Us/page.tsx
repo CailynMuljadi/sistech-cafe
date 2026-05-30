@@ -2,11 +2,12 @@ import React from 'react';
 
 const page = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center">
-            <div className="space-y-3 max-w-3x1">
-                <h1 className="text-5x1 font-semibold">ABOUT US</h1>
-            </div>
-        </div>
+       <div className="min-h-screen flex items-center justify-center"> 
+    <div className="space-y-3 max-w-3x1">
+      <h1 className="text-5x1 font-semibold">ABOUT US</h1>
+      <p className="text-gray-500"> Local Coffee brewed by Extraordinary Women in Indonesia</p>
+       </div>
+    </div>
     );
 }
 
