@@ -108,3 +108,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Force any links or icons inside the footer to stay solid white */
+footer a, 
+footer a svg {
+  color: #ffffff !important;
+}

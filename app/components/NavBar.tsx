@@ -3,7 +3,9 @@ import Link from "next/link";
 
 const NavBar = () => {
     return (
-        <nav className='fixed top-0 w-full flex items-center bg-brand-white 
+        <nav 
+        style={{ backgroundColor: '#ffffff' }}
+        className='fixed top-0 w-full flex items-center bg-brand-white 
         justify-around py-5 px-24 border-gray-700 bg-black shadow-md z-10'>
 
             <Link href="/" 
