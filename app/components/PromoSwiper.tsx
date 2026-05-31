@@ -53,7 +53,7 @@ export default function PromoSwiper() {
           
           {/* Fixed: Added transition, text color toggle, and scale behavior */}
           <Link 
-            href="/promo" 
+            href="/Promo" 
             className="text-base font-poppins font-semibold text-black hover:text-[#FF74B1] hover:scale-105 no-underline transition-all duration-300 transform inline-block"
           >
             View All Promos &rarr;

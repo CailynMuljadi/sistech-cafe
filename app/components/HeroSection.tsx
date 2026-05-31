@@ -16,7 +16,7 @@ export default function HeroSection() {
         </p>
         <div className="pt-2">
           {/* Linked perfectly to the menu page route */}
-          <Link href="/Menu" className="btn-brand inline-block text-center no-underline">
+          <Link href="/menu" className="btn-brand inline-block text-center no-underline">
             See Our Menu
           </Link>
         </div>

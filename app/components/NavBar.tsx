@@ -18,7 +18,7 @@ const NavBar = () => {
 
             <ul className ="flex gap-10 text-lg list-none m-0 p-0">
                 <Link
-                href="/menu"
+                href="menu"
                 className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     Menu
@@ -32,14 +32,14 @@ const NavBar = () => {
                 </Link>  
 
                  <Link
-                href="/promo"
+                href="/Promo"
                 className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     Promo
                 </Link>  
 
                  <Link
-                href="/login"
+                href="/Login"
                 className="btn-brand"
                 >
                     Login
