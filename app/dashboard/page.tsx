@@ -56,7 +56,7 @@ export default function DashboardPage() {
 
         {/* Navigation Action Footer Button */}
         <div className="pt-2">
-          <Link href="/menu" className="btn-brand w-full py-3 text-center inline-block no-underline">
+          <Link href="/Menu" className="btn-brand w-full py-3 text-center inline-block no-underline">
             Go to Menu & Order Fresh Brew
           </Link>
         </div>
