@@ -18,28 +18,28 @@ const NavBar = () => {
 
             <ul className ="flex gap-10 text-lg list-none m-0 p-0">
                 <Link
-                href="Menu"
+                href="/menu"
                 className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     Menu
                 </Link>    
                 
                  <Link
-                href="About Us"
+                href="/about"
                 className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     About Us
                 </Link>  
 
                  <Link
-                href="Promo"
+                href="/promo"
                 className="font-semibold text-brand-black no-underline hover:text-brand-pink transition-colors"
                 >
                     Promo
                 </Link>  
 
                  <Link
-                href="Login"
+                href="/login"
                 className="btn-brand"
                 >
                     Login

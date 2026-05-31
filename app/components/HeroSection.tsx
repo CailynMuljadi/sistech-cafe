@@ -7,7 +7,6 @@ export default function HeroSection() {
       style={{ backgroundImage: "url('/hero-bg.jpg')" }}
       className="w-full min-h-[85vh] bg-cover bg-center flex items-center justify-center px-4 py-12"
     >
-      {/* Semi-transparent, white-bordered glass rectangle */}
       <div className="glass-panel-animate max-w-2xl w-full bg-white/40 backdrop-blur-md p-8 md:p-12 rounded-[32px] border-2 border-white/60 shadow-xl text-center space-y-6">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-poppins font-bold tracking-tight text-[#FF74B1]">
           SISTECH CAFE
@@ -16,7 +15,8 @@ export default function HeroSection() {
           Local Coffee brewed by Extraordinary Women in Indonesia.
         </p>
         <div className="pt-2">
-          <Link href="/menu" className="btn-brand">
+          {/* Linked perfectly to the menu page route */}
+          <Link href="/Menu" className="btn-brand inline-block text-center no-underline">
             See Our Menu
           </Link>
         </div>

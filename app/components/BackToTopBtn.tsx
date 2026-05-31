@@ -1,34 +1,44 @@
 "use client";
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './BackToTopBtn.css';
 
-
 export default function BackToTopBtn() {
-    const [scroll, setScroll] = React.useState(0);
+    const [scroll, setScroll] = useState(0);
+    // Added a local state to track when the user's mouse hovers over the asset
+    const [isHovered, setIsHovered] = useState(false);
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
+        // Created a named reference function so cleanups remove the listener correctly
+        const handleScroll = () => {
             setScroll(window.scrollY);
-        });
-        return () => {
-            window.removeEventListener('scroll', () => {
-                setScroll(window.scrollY);
-            });
         };
-    }, [scroll]);
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []); // Empty dependency array prevents resetting the listener on every scroll step
 
     const backToTop = () => {
-        window.scrollTo(0,0);
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Added smooth behavior control
     };
 
     return (
         <a
-        onClick={backToTop}
-        className={`back-to-top d-flex align-items-center justify-content-center
-            ${scroll > 100 ? 'active' : undefined}`}
+            onClick={backToTop}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            style={{ cursor: 'pointer' }}
+            className={`back-to-top d-flex align-items-center justify-content-center ${
+                scroll > 100 ? 'active' : ''
+            }`}
         >
-            <img src="/assets/arrow-up.png" alt="Back to top" />
+            {/* Swaps the image src string parameter depending on hover states */}
+            <img 
+                src={isHovered ? "/back-to-top-hover.png" : "/back-to-top-default.png"} 
+                alt="Back to top" 
+            />
         </a>
     );
 }
