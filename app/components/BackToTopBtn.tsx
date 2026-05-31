@@ -31,8 +31,8 @@ export default function BackToTopBtn() {
             onMouseLeave={() => setIsHovered(false)}
             style={{ 
                 cursor: 'pointer',
-                width: '20px',              // Fixed small width
-                height: '20px',             // Fixed small height (matching width makes it a perfect square)
+                width: '40px',              // Fixed small width
+                height: '40px',             // Fixed small height (matching width makes it a perfect square)
                 borderRadius: '50%',        // Forces the button container to be fully rounded/circle
                 overflow: 'hidden',         // Prevents the image from spilling outside the circle
                 padding: '0px',             // Removes any extra internal spacing squeezing the asset
