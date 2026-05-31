@@ -1,0 +1,36 @@
+.back-to-top {
+  position: fixed !important;
+  visibility: hidden;
+  opacity: 0;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 1000 !important;
+  background-color: #FF74B1 !important;
+  color: #ffffff !important;
+  border: none !important;
+  cursor: pointer !important;
+  border-radius: 50px !important;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top i {
+  font-size: 20px !important;
+  color: #ffffff !important;
+  line-height: 0 !important;
+}
+
+.back-to-top:hover {
+  background-color: #ffffff !important;
+  color: #FF74B1 !important;
+  border: 2px solid #FF74B1 !important;
+  transform: scale(1.1) !important;
+}
+
+.back-to-top:hover i {
+  color: #FF74B1 !important;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
