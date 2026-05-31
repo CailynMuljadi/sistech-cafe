@@ -7,12 +7,9 @@ const NavBar = () => {
         style={{ 
             backgroundColor: '#ffffff', 
             borderBottom: '1px solid #cacaca',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            padding: '1rem 2rem',
+            height: '103px',
         }}
-        className='w-full sticky top-0 z-50'>
+        className='w-full px-5 py-4 flex justify-between items-center sticky top-0 z-50'>
 
             <Link href="/" 
             className="nav-logo font-poppins font-bold text-2xl text-brand-pink no-underline">            
