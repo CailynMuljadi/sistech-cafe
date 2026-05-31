@@ -76,7 +76,7 @@ nav ul a:hover {
 }
 
 /* force button to be pink with white text */
-button, .menu-btn {
+button, .menu-btn, .btn-brand {
   background-color: #FF74B1 !important;
   color: #ffffff !important;
   border: none !important;
@@ -88,7 +88,7 @@ button, .menu-btn {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-button:hover {
+button:hover, .menu-btn:hover, .btn-brand:hover {
   background-color: #ffffff !important;
   color: #FF74B1 !important;
   border: 2px solid #FF74B1 !important;

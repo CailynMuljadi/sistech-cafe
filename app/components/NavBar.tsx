@@ -12,7 +12,7 @@ const NavBar = () => {
             alignItems: 'center',
             padding: '1rem 2rem',
         }}
-        className='w-full'>
+        className='w-full sticky top-0 z-50'>
 
             <Link href="/" 
             className="nav-logo font-poppins font-bold text-2xl text-brand-pink no-underline">            
@@ -43,8 +43,7 @@ const NavBar = () => {
 
                  <Link
                 href="Login"
-                className="font-semibold px-6 py-3 bg-brand-pink text-brand-white rounded-full shadow-sm 
-                transition-all duration-300 transform hover:bg-brand-white hover:text-brand-pink hover:scale-105 cursor-pointer border-none"
+                className="btn-brand"
                 >
                     Login
                 </Link>  
