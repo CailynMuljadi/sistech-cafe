@@ -1,9 +1,11 @@
-import react, { useEffect } from 'react';
+"use client";
+
+import React, { useEffect } from 'react';
 import './BackToTopBtn.css';
 
 
 export default function BackToTopBtn() {
-    const [scroll, setScroll] = react.useState(0);
+    const [scroll, setScroll] = React.useState(0);
 
     useEffect(() => {
         window.addEventListener('scroll', () => {
