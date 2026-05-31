@@ -1,12 +1,49 @@
-import React from "react";
+"use client";
+
+import React, {useRef, useEffect} from "react";
 import Link from "next/link";
 
 export default function PromoSwiper() {
+const containerRef = useRef<HTMLDivElement>(null);
+
+
   const promos = [
     { id: 1, title: "Buy 1 Get 1 Free", desc: "Every Friday on all espresso blends.", code: "FRIDAYBLISS" },
     { id: 2, title: "Student Discount", desc: "Show your ID for 20% off manual brews.", code: "SISTECHSTUDENT" },
     { id: 3, title: "Morning Rush", desc: "Free pastry with any large latte before 9 AM.", code: "EARLYBIRD" },
+    { id: 4, title: "Weekend Brunch", desc: "15% off total bill with two main courses.", code: "WEEKEND15" },
+    { id: 5, title: "Eco Cup Discount", desc: "Bring your reusable tumbler for a flat discount.", code: "GOGREEN" }
   ];
+
+  useEffect(() => {
+  const container = containerRef.current;
+  if (!container) return;
+
+  let intervalId: NodeJS.Timeout;
+  // Intersection Observer monitors screen scroll position
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          intervalId = setInterval(() => {
+            if (container.scrollLeft + container.clientWidth >= container.scrollWidth - 10) {
+              container.scrollTo({ left: 0, behavior: "smooth" });
+            } else {
+              container.scrollBy({ left: 300, behavior: "smooth" });
+            }
+          }, 3000); // Transitions every 3 seconds
+        } else {
+          clearInterval(intervalId);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    observer.observe(container);
+    return () => {
+      clearInterval(intervalId);
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <section className="w-full bg-white py-12 px-6 border-b border-gray-100">

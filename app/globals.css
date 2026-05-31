@@ -72,6 +72,23 @@ nav ul li {
   100% { transform: translateX(0); }
 }
 
+@keyframes glassJiggle {
+  0% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.01) rotate(-0.3deg); }
+  50% { transform: scale(1) rotate(0deg); }
+  75% { transform: scale(1.01) rotate(0.3deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.glass-panel-animate {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-panel-animate:hover {
+  animation: glassJiggle 0.5s ease-in-out infinite;
+  border-color: rgba(255, 116, 177, 0.8) !important;
+}
+
 .nav-logo:hover {
   animation: vibrate 0.3s linear infinite;
   color:#E05594 !important;
